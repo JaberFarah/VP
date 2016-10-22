@@ -198,5 +198,10 @@ body .gallery li div#bottom:hover{
 	margin-right: 0;
 	margin-left: 0;
 }
-.btn-lg{
+.normal-lnk{
+	text-decoration: none;
+}
+.normal-lnk:hover{
+	color:;
+
 }
