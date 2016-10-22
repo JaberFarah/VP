@@ -30,7 +30,8 @@ body nav ul li a:hover{
 /* ----------------------------------------- main --------------------------------------------------*/
 
 body .main{
-	height: auto;
+	height: 550px;
+	display: flex;
     background: rgb(153,153,153);
 }
 body .jumbotron{
