@@ -1,0 +1,272 @@
+/* ------------------------------------------ RESET --------------------------------------------------*/
+
+a, blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, img, input, label, li, ol, p, pre, td, th, ul {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body, html {
+    height: 100%;
+}
+
+/* ----------------------------------------- header --------------------------------------------------*/
+body .header {
+		background: rgb(153,153,153);
+		overflow: hidden;
+}
+body .header .logo{
+	float: left;
+	padding: 25px 40px;
+}
+body .header .logo a{
+	text-decoration: none;
+	color: black;
+	font-family: Tahoma;
+}
+body .header .menu{
+	padding-right: 20px;
+	float: right;
+	list-style: none;
+}
+body .header .menu li{
+	float: left;
+}
+body .header .menu li a{
+	font-size: 22px;
+	padding: 20px;
+	font-family: Tahoma;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+body .header .menu li a:hover{
+	color: white;
+}
+/* ----------------------------------------- main --------------------------------------------------*/
+body .main{
+	text-align: center;
+	height: 540px;
+	background: rgb(153,153,153);
+	display: flex;
+
+}
+body .main div{
+	margin:auto;
+	max-width: 50%;
+	flex-wrap: wrap;
+	max-width: 40%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body .main div h1{
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: Tahoma;
+}
+/* ----------------------------------------- products --------------------------------------------------*/
+body .products{
+	height: 410px;
+	overflow: hidden;
+	width: 100%;
+}
+body .products div:first-child{
+	width: 100%;
+	margin:auto;
+	overflow: hidden;
+}
+body .products div h2:first-child{
+	float: none;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 60px;
+}
+body .products div ul{
+	list-style: none;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding: 0 40px;
+	margin: auto;
+	align-items: stretch;
+	justify-content: space-between;
+	box-sizing:border-box;
+
+}
+body .products div ul li{
+	width: auto;
+	display: block;
+	padding-top: 40px;
+	padding-left: 20px;
+	flex-basis: 100%;
+}
+body .products div ul li:first-child{
+	padding-left: 0;
+}
+body .products div ul li div{
+	width: auto;
+	height: 115px;
+	background: rgb(153, 153, 153);
+}
+body .products div ul li h3{
+	text-transform: capitalize;
+	padding: 20px 0;
+}
+body .products div ul li a{
+	text-decoration: none;
+	color: black;
+}
+body .products div h2{
+	clear: both;
+	float: right;
+	margin-right: 40px;
+	text-transform: capitalize;
+}
+.button {
+	line-height: 70px;
+	text-decoration: none;
+	padding: 20px 40px;
+	text-align: center;
+	text-transform: capitalize;
+}
+.black{
+	background: rgb(51,51,51);
+	color: white;
+}
+/* ----------------------------------------- gallery --------------------------------------------------*/
+body .gallery {
+	height: 800px;
+	background: rgb(204,204,204);
+	font-family: Tahoma;
+}
+body .gallery div{
+	width: 800px;
+	margin: auto;
+}
+body .gallery div h2{
+	padding: 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Tahoma;
+}
+body .gallery div ul{
+	padding-top: 40px;
+	width: 100%;
+	margin: auto;
+	height: 424px;
+	list-style: none
+}
+body .gallery li{
+	width: 200px;
+	height: 424px;	
+	float: left;
+}
+body .gallery li div{
+	width: 200px;
+	height: 424px;
+	text-align: center;
+}
+body .gallery li div#top h3{
+	line-height: 80px;
+}
+body .gallery li div#upperMid h3{
+	padding-top: 140px;
+}
+body .gallery li div#mid h3{
+	line-height: 425px
+}
+body .gallery li div#bottom{
+	position: relative;
+}
+body .gallery li div#bottom h3{
+	position: absolute;
+	bottom: 10%;
+	left: 33%
+}
+body .gallery li div h3{
+	color: white;
+	text-transform: capitalize;
+	text-align: center;
+}
+body .gallery li div#top{
+	background: url(images/dylan9.jpg) 0 0;
+}
+body .gallery li div#upperMid{
+	background: url(images/dylan9.jpg) -200px 0;
+}
+body .gallery li div#mid{
+	background: url(images/dylan9.jpg) -400px 0;
+}
+body .gallery li div#bottom{
+	background: url(images/dylan9.jpg) -600px 0;
+}
+body .gallery li div#top:hover{
+	background: url(images/dylan9.jpg) 0 -425px;
+}
+body .gallery li div#upperMid:hover{
+	background: url(images/dylan9.jpg) -200px -425px;
+}
+body .gallery li div#mid:hover{
+	background: url(images/dylan9.jpg) -400px -425px;
+}
+body .gallery li div#bottom:hover{
+	background: url(images/dylan9.jpg) -600px -425px;
+}
+
+/* ----------------------------------------- footer --------------------------------------------------*/
+
+.footer {
+	height: 600px;
+	background: rgb(51,51,51);
+}
+.footer div:first-child{
+	margin: auto;
+	padding-top: 60px;
+}
+.footer div div:first-child{
+	float: left;
+	width: 650px;
+	padding: 0 40px;
+	font-family: Tahoma;
+	font-size: 18px;
+	color: white;
+}
+.footer div div:first-child p{
+	margin-bottom: 40px;
+}
+.white{
+	color: black;
+	background: white;
+}
+.footer div div{
+	float: left;
+	width: 200px;
+	padding: 0 40px;
+}
+.footer div div ul{
+	list-style: none;
+	color: white;
+	font-family: Tahoma;
+}
+.footer div div .bottomMenu li{
+	text-transform: capitalize;
+}
+.footer div div .bottomMenu li#menuHead{
+	border-bottom: white solid 1px;
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+.footer div div .bottomMenu li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+.footer div div .bottomMenu li .even{
+color: rgb(153,205,253);
+}
+/* ----------------------------------------- h2 headers --------------------------------------------------*/
+ .h2Header{
+ 	font-family: Tahoma;
+ 	text-align: center;
+ }

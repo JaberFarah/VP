@@ -1,0 +1,187 @@
+/* ------------------------------------------ RESET --------------------------------------------------*/
+a, blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, img, input, label, li, ol, p, pre, td, th, ul {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body, html {
+    height: 100%;
+}
+
+/* ----------------------------------------- header --------------------------------------------------*/
+.header{
+	font-family: Tahoma;
+	background: rgb(153,153,153);
+	border: 0;
+	border-radius: 0;
+	overflow: hidden;
+	padding: 0 40px !important;
+	margin-bottom: 0px;
+}
+.header > *{
+	border-radius: 0;
+}
+body nav ul{
+	box-sizing: border-box !important;
+}
+body nav ul li a:hover{
+	background-color: #e7e7e7;;
+}
+/* ----------------------------------------- main --------------------------------------------------*/
+
+body .main{
+	height: 500px;
+	display: flex;
+    background: rgb(153,153,153);
+}
+body .jumbotron{
+	background: rgb(153,153,153);
+
+}
+body .vertical-center{
+	margin: auto;
+    max-width: 50%;
+    flex-wrap: wrap;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mainHeader{
+	font-size: 60px !important;
+}
+
+/* ----------------------------------------- products --------------------------------------------------*/
+
+body .products {
+	height: 500px;
+	margin-left: 40px;
+	margin-right: 40px;
+	box-sizing: border-box;
+}
+.white-bg{
+	background-color: white !important;
+	box-sizing: border-box;
+}
+.thumbnail{
+	height: 200px;
+	background: rgb(153,153,153);
+}
+.btn-fix{
+	margin-right: 40px;
+	margin-left: 16px;
+}
+
+/* ----------------------------------------- gallery --------------------------------------------------*/
+
+.gallery{
+	padding-left: 40px;
+	padding-right: 40px;
+	height: 400px;
+	background: rgb(204,204,204);
+}
+
+.height-450{
+	height: 450px;
+}
+#demonstration{
+	background: rgb(204,204,204);
+}
+body .gallery {
+	height: 800px;
+	background: rgb(204,204,204);
+	font-family: Tahoma;
+}
+body .gallery div{
+	width: 800px;
+	margin: auto;
+}
+body .gallery div h2{
+	padding: 50px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Tahoma;
+}
+body .gallery div ul{
+	padding-top: 40px;
+	width: 100%;
+	margin: auto;
+	height: 424px;
+	list-style: none
+}
+body .gallery li{
+	width: 200px;
+	height: 424px;	
+	float: left;
+}
+body .gallery li div{
+	width: 200px;
+	height: 424px;
+	text-align: center;
+}
+body .gallery li div#top h3{
+	line-height: 80px;
+}
+body .gallery li div#upperMid h3{
+	padding-top: 140px;
+}
+body .gallery li div#mid h3{
+	line-height: 425px
+}
+body .gallery li div#bottom{
+	position: relative;
+}
+body .gallery li div#bottom h3{
+	position: absolute;
+	bottom: 10%;
+	left: 33%
+}
+body .gallery li div h3{
+	color: white;
+	text-transform: capitalize;
+	text-align: center;
+}
+body .gallery li div#top{
+	background: url(images/dylan9.jpg) 0 0;
+}
+body .gallery li div#upperMid{
+	background: url(images/dylan9.jpg) -200px 0;
+}
+body .gallery li div#mid{
+	background: url(images/dylan9.jpg) -400px 0;
+}
+body .gallery li div#bottom{
+	background: url(images/dylan9.jpg) -600px 0;
+}
+body .gallery li div#top:hover{
+	background: url(images/dylan9.jpg) 0 -425px;
+}
+body .gallery li div#upperMid:hover{
+	background: url(images/dylan9.jpg) -200px -425px;
+}
+body .gallery li div#mid:hover{
+	background: url(images/dylan9.jpg) -400px -425px;
+}
+body .gallery li div#bottom:hover{
+	background: url(images/dylan9.jpg) -600px -425px;
+}
+/* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
+.black{
+	color: black !important;
+}
+.capitalize{
+	text-transform: capitalize !important;
+}
+.Tahoma{
+	font-family: Tahoma !important;
+}
+.bolder{
+	font-weight: bold;
+}
+.row{
+	margin-right: 0;
+	margin-left: 0;
+}
+.btn-lg{
+}
