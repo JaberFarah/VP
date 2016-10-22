@@ -30,8 +30,7 @@ body nav ul li a:hover{
 /* ----------------------------------------- main --------------------------------------------------*/
 
 body .main{
-	height: 500px;
-	display: flex;
+	height: auto;
     background: rgb(153,153,153);
 }
 body .jumbotron{
@@ -47,7 +46,12 @@ body .vertical-center{
     left: 0;
     right: 0;
 }
-
+.mgbot{
+	margin-bottom: 40px;
+}
+.pull-right{
+	padding-right: 90px;
+}
 .mainHeader{
 	font-size: 60px !important;
 }
@@ -166,6 +170,17 @@ body .gallery li div#mid:hover{
 body .gallery li div#bottom:hover{
 	background: url(images/dylan9.jpg) -600px -425px;
 }
+
+/* ----------------------------------------- footer --------------------------------------------------*/
+
+.footer{
+
+}
+.well{
+	margin: 0;
+	max-width: 50%;
+}
+
 /* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
 .black{
 	color: black !important;
