@@ -199,9 +199,9 @@ body .gallery li div#bottom:hover{
 	margin-left: 0;
 }
 .normal-lnk{
-	text-decoration: none;
+	text-decoration: none !important;
 }
 .normal-lnk:hover{
 	color:#337ab7;
-
+	cursor: pointer !important;
 }
