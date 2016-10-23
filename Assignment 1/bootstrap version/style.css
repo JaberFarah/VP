@@ -30,7 +30,7 @@ body nav ul li a:hover{
 /* ----------------------------------------- main --------------------------------------------------*/
 
 body .main{
-	height: 550px;
+	min-height: 550px;
 	display: flex;
     background: rgb(153,153,153);
 }
@@ -101,11 +101,24 @@ body .products {
 body .gallery div div{
 	box-sizing: border-box;
 }
-body .gallery div div .tcell{
+body .gallery div div .trow{
+	display: table-row;
+	text-align: center;
+}
+.td{
 	display: table-cell;
 	text-align: center;
 }
-
+.upperMid{
+	line-height: 50px;
+	box-sizing: border-box;
+}
+.mid{
+	vertical-align: middle;
+}
+.bottom{
+	vertical-align: bottom;
+}
 /* ----------------------------------------- footer --------------------------------------------------*/
 
 .footer{
@@ -118,6 +131,9 @@ body .gallery div div .tcell{
 
 /* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
 
+.cancelpad{
+	padding: 0 0 !important;
+}
 .table{
 	width: auto !important;
 	empty-cells: show;
@@ -153,4 +169,10 @@ body .gallery div div .tcell{
     background-repeat: no-repeat;
     color: white;
     border: rgb(51,51,51);
+}
+
+@media screen and (max-width: 1024px){
+	.table{
+		margin: auto;
+	}
 }
