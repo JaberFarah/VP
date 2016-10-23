@@ -119,6 +119,7 @@ body .gallery div div .tcell{
 
 .table{
 	width: auto !important;
+	empty-cells: show;
 }
 .black{
 	color: black !important;
