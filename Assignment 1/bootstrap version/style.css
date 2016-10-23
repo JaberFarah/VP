@@ -127,6 +127,10 @@ body .gallery div div .trow{
 .even{
 	color: rgb(153,205,253) !important;
 }
+#btn-white:hover{
+	color: white !important;
+	background: rgb(100,100,100) !important;
+}
 /* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
 
 .nav>li>a:hover{
