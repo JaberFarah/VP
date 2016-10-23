@@ -88,16 +88,12 @@ body .products {
 #demonstration{
 	background: rgb(204,204,204);
 }
-.pdbot{
-	padding-bottom: 50px;
-}
 .bg200{
 	background: url('images/200.png');
 	height: 200px;
 	min-width: 200px;
 	overflow: hidden;
 }
-
 body .gallery div div{
 	box-sizing: border-box;
 }
@@ -122,15 +118,31 @@ body .gallery div div .trow{
 /* ----------------------------------------- footer --------------------------------------------------*/
 
 .footer{
-
+	background: rgb(51,51,51);
 }
 .well{
 	margin: 0;
 	max-width: 50%;
 }
-
+.even{
+	color: rgb(153,205,253) !important;
+}
 /* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
 
+.mgtop{
+	margin-top: 40px;
+}
+.pdtop{
+	padding-top: 50px;
+}
+.white{
+	color: white!important;
+}
+.pdbot{
+	padding-bottom: 50px;
+}
+.pull-left{
+}
 .cancelpad{
 	padding: 0 0 !important;
 }
@@ -158,7 +170,7 @@ body .gallery div div .trow{
 }
 .normal-lnk{
 	text-decoration: none !important;
-	color: black;
+	color: white;
 }
 .normal-lnk:hover{
 	color:#337ab7;
@@ -171,7 +183,7 @@ body .gallery div div .trow{
     border: rgb(51,51,51);
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1300px){
 	.table{
 		margin: auto;
 	}
