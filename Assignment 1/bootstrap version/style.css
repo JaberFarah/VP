@@ -95,13 +95,15 @@ body .products {
 	background: url('images/200.png');
 	height: 200px;
 	min-width: 200px;
+	overflow: hidden;
 }
 
-body .gallery div div .uppermid{
+body .gallery div div{
 	box-sizing: border-box;
 }
-body .gallery div div .uppermid h3{
+body .gallery div div .tcell{
 	display: table-cell;
+	text-align: center;
 }
 /* ----------------------------------------- footer --------------------------------------------------*/
 
