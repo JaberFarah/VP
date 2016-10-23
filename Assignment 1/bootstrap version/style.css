@@ -129,6 +129,9 @@ body .gallery div div .trow{
 }
 /* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
 
+.nav>li>a:hover{
+	color: white !important;
+}
 .mgtop{
 	margin-top: 40px;
 }
