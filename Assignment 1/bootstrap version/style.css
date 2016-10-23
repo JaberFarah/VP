@@ -82,95 +82,27 @@ body .products {
 .gallery{
 	padding-left: 40px;
 	padding-right: 40px;
-	height: 400px;
 	background: rgb(204,204,204);
 }
 
-.height-450{
-	height: 450px;
-}
 #demonstration{
 	background: rgb(204,204,204);
 }
-body .gallery {
-	height: 800px;
-	background: rgb(204,204,204);
-	font-family: Tahoma;
+.pdbot{
+	padding-bottom: 50px;
 }
-body .gallery div{
-	width: 800px;
-	margin: auto;
-}
-body .gallery div h2{
-	padding: 50px 0;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: Tahoma;
-}
-body .gallery div ul{
-	padding-top: 40px;
-	width: 100%;
-	margin: auto;
-	height: 424px;
-	list-style: none
-}
-body .gallery li{
-	width: 200px;
-	height: 424px;	
-	float: left;
-}
-body .gallery li div{
-	width: 200px;
-	height: 424px;
-	text-align: center;
-}
-body .gallery li div#top h3{
-	line-height: 80px;
-}
-body .gallery li div#upperMid h3{
-	padding-top: 140px;
-}
-body .gallery li div#mid h3{
-	line-height: 425px
-}
-body .gallery li div#bottom{
-	position: relative;
-}
-body .gallery li div#bottom h3{
-	position: absolute;
-	bottom: 10%;
-	left: 33%
-}
-body .gallery li div h3{
-	color: white;
-	text-transform: capitalize;
-	text-align: center;
-}
-body .gallery li div#top{
-	background: url(images/dylan9.jpg) 0 0;
-}
-body .gallery li div#upperMid{
-	background: url(images/dylan9.jpg) -200px 0;
-}
-body .gallery li div#mid{
-	background: url(images/dylan9.jpg) -400px 0;
-}
-body .gallery li div#bottom{
-	background: url(images/dylan9.jpg) -600px 0;
-}
-body .gallery li div#top:hover{
-	background: url(images/dylan9.jpg) 0 -425px;
-}
-body .gallery li div#upperMid:hover{
-	background: url(images/dylan9.jpg) -200px -425px;
-}
-body .gallery li div#mid:hover{
-	background: url(images/dylan9.jpg) -400px -425px;
-}
-body .gallery li div#bottom:hover{
-	background: url(images/dylan9.jpg) -600px -425px;
+.bg200{
+	background: url('images/200.png');
+	height: 200px;
+	min-width: 200px;
 }
 
+body .gallery div div .uppermid{
+	box-sizing: border-box;
+}
+body .gallery div div .uppermid h3{
+	display: table-cell;
+}
 /* ----------------------------------------- footer --------------------------------------------------*/
 
 .footer{
@@ -182,6 +114,10 @@ body .gallery li div#bottom:hover{
 }
 
 /* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
+
+.table{
+	width: auto !important;
+}
 .black{
 	color: black !important;
 }
@@ -208,6 +144,7 @@ body .gallery li div#bottom:hover{
 }
 .btn-black{
     background: rgb(51,51,51);
+    background-repeat: no-repeat;
     color: white;
     border: rgb(51,51,51);
 }
