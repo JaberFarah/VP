@@ -11,12 +11,12 @@ body, html {
 /* ----------------------------------------- header --------------------------------------------------*/
 .header{
 	font-family: Tahoma;
-	background: rgb(153,153,153);
 	border: 0;
-	border-radius: 0;
+	background: rgb(153,153,153);
 	overflow: hidden;
-	padding: 0 40px !important;
-	margin-bottom: 0px;
+}
+.header-bg{
+		background: rgb(153,153,153);
 }
 .header > *{
 	border-radius: 0;
@@ -32,6 +32,9 @@ body nav ul li a:hover{
 body .main{
 	min-height: 550px;
 	display: flex;
+    background: rgb(153,153,153);
+}
+body .main-bg{
     background: rgb(153,153,153);
 }
 body .jumbotron{
@@ -133,9 +136,20 @@ body .gallery div div .trow{
 }
 /* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
 
+/* -----------------------header fixes--------------------------------*/
+
+
+.navbar-default{
+	background: rgb(153,153,153);
+}
+.navbar{
+	border: 0;
+}
 .nav>li>a:hover{
 	color: white !important;
 }
+
+
 .mgtop{
 	margin-top: 40px;
 }
