@@ -202,8 +202,3 @@ body .gallery div div .trow{
     border: rgb(51,51,51);
 }
 
-@media screen and (max-width: 1300px){
-	.table{
-		margin: auto;
-	}
-}
