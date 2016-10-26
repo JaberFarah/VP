@@ -72,11 +72,9 @@ body .products {
 	height: 200px;
 	background: rgb(153,153,153);
 }
-.btn-fix{
-	margin-right: 40px;
-	margin-left: 16px;
+.padding-left{
+	padding-right: 15px;
 }
-
 /* ----------------------------------------- gallery --------------------------------------------------*/
 
 .gallery{
@@ -146,7 +144,14 @@ body .gallery div div .trow{
 	color: white !important;
 }
 
-/* -----------------------  fixes--------------------------------*/
+/* -----------------------products secion fixes--------------------------------*/
+
+.pad-right-16{
+	padding-right: 16px !important;
+}
+
+
+
 
 .mgtop{
 	margin-top: 40px;
