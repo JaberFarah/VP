@@ -31,7 +31,6 @@ body nav ul li a:hover{
 
 body .main{
 	min-height: 550px;
-	display: flex;
     background: rgb(153,153,153);
 }
 body .main-bg{
@@ -42,13 +41,11 @@ body .jumbotron{
 
 }
 body .vertical-center{
-	margin: auto;
-    max-width: 50%;
-    flex-wrap: wrap;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+	display: flex;
+	height: 500px;
+	justify-content: center;
+	flex-direction: column;
+
 }
 .mgbot{
 	margin-bottom: 40px;
@@ -149,6 +146,7 @@ body .gallery div div .trow{
 	color: white !important;
 }
 
+/* -----------------------  fixes--------------------------------*/
 
 .mgtop{
 	margin-top: 40px;
