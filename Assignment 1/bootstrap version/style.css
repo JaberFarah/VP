@@ -184,19 +184,13 @@ body .gallery div div .trow{
 .black{
 	color: black !important;
 }
-.capitalize{
-	text-transform: capitalize !important;
-}
 .Tahoma{
 	font-family: Tahoma !important;
 }
 .bolder{
 	font-weight: bold;
 }
-.row{
-	margin-right: 0;
-	margin-left: 0;
-}
+
 .normal-lnk{
 	text-decoration: none !important;
 	color: white;
