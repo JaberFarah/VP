@@ -72,8 +72,8 @@ body .products {
 	height: 200px;
 	background: rgb(153,153,153);
 }
-.padding-left{
-	padding-right: 15px;
+.margin-right-15{
+	margin-right: 15px;
 }
 /* ----------------------------------------- gallery --------------------------------------------------*/
 
