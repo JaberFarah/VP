@@ -9,23 +9,10 @@ body, html {
 }
 
 /* ----------------------------------------- header --------------------------------------------------*/
-.header{
-	font-family: Tahoma;
-	border: 0;
-	background: rgb(153,153,153);
-	overflow: hidden;
-}
+
 .header-bg{
 		background: rgb(153,153,153);
-}
-.header > *{
-	border-radius: 0;
-}
-body nav ul{
-	box-sizing: border-box !important;
-}
-body nav ul li a:hover{
-	background-color: #e7e7e7;;
+		display: fixed;
 }
 /* ----------------------------------------- main --------------------------------------------------*/
 
