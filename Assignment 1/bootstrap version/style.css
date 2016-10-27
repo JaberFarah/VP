@@ -132,6 +132,9 @@ body .gallery div div .trow{
 	color: white !important;
 	background: rgb(100,100,100) !important;
 }
+.font-18{
+	font-size: 18px;
+}
 /* ----------------------------------------- FIXES + Global classes --------------------------------------------------*/
 
 /* -----------------------header fixes--------------------------------*/
