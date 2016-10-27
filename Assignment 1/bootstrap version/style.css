@@ -104,7 +104,7 @@ body .gallery div div .trow{
 	text-align: center;
 }
 .upperMid{
-	line-height: 50px;
+	line-height: 100px;
 	box-sizing: border-box;
 }
 .mid{
@@ -171,10 +171,9 @@ body .gallery div div .trow{
 	padding: 0 0 !important;
 }
 .table{
-	width: auto !important;
 	empty-cells: show;
-	text-align: center;
 	display: table;
+	height: 100%;
 }
 .black{
 	color: black !important;
@@ -207,3 +206,7 @@ body .gallery div div .trow{
     border: rgb(51,51,51);
 }
 
+
+.subheading{
+	height: 100px !important;
+}
