@@ -12,7 +12,9 @@ body, html {
 
 .header-bg{
 		background: rgb(153,153,153);
-		display: fixed;
+}
+.navbar{
+	margin-bottom: 0;
 }
 /* ----------------------------------------- main --------------------------------------------------*/
 
