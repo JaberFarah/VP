@@ -27,7 +27,6 @@ body .main-bg{
 }
 body .jumbotron{
 	background: rgb(153,153,153);
-
 }
 body .vertical-center{
 	display: flex;
@@ -45,7 +44,9 @@ body .vertical-center{
 .mainHeader{
 	font-size: 60px !important;
 }
-
+.carousel-inner>.item>img{
+	min-width: 100%;
+}
 /* ----------------------------------------- products --------------------------------------------------*/
 
 body .products {
