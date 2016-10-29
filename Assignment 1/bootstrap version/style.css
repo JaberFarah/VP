@@ -16,6 +16,10 @@ body, html {
 .navbar{
 	margin-bottom: 0;
 }
+.fallBack{
+	display: none;
+}
+
 /* ----------------------------------------- main --------------------------------------------------*/
 
 body .main{
