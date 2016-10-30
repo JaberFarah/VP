@@ -16,11 +16,30 @@ body, html {
 .navbar{
 	margin-bottom: 0;
 }
-.fallBack{
-	display: none;
+.subMenu{
 	list-style: none;
+	display: none;
 }
-
+.subMenu li:hover{
+	cursor: pointer;
+	color: white;
+}
+@media (min-width: 768px) {
+	.dropDown{
+		position: relative;
+		z-index: 1;
+	}
+	.subMenu{
+		position: absolute;
+		background: rgb(153,153,153);
+		width: 90px;
+	}
+}
+@media (max-width: 768px) {
+	.subMenu{
+		background: rgb(153,153,153);
+	}
+}
 /* ----------------------------------------- main --------------------------------------------------*/
 
 body .main{
