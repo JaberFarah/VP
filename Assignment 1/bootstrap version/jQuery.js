@@ -25,7 +25,11 @@ $(document).ready(function() {
     )
     $('.drop2').click(
     	function(event){
+<<<<<<< HEAD
     		event.stopPpagation();
+=======
+    		event.stopPropagation();
+>>>>>>> refs/remotes/origin/jquery.js
     	}
     )
 });
