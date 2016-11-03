@@ -16,10 +16,18 @@ body, html {
 .navbar{
 	margin-bottom: 0;
 }
+#bigBox{
+	width: 50%;
+	height: 50%;
+	background: white;
+	border: rgb(100,100,100) solid 3px;
+	border-radius: 10%;
+	position: absolute;
+}
 .displayNone{
 	display: none;
 }
-.subMenu1 li:hover{
+.subMenu li:hover{
 	cursor: pointer;
 	color: white;
 }
