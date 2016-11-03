@@ -16,11 +16,10 @@ body, html {
 .navbar{
 	margin-bottom: 0;
 }
-.subMenu{
-	list-style: none;
+.displayNone{
 	display: none;
 }
-.subMenu li:hover{
+.subMenu1 li:hover{
 	cursor: pointer;
 	color: white;
 }
@@ -29,14 +28,14 @@ body, html {
 		position: relative;
 		z-index: 1;
 	}
-	.subMenu{
+	.subMenu1{
 		position: absolute;
 		background: rgb(153,153,153);
 		width: 90px;
 	}
 }
 @media (max-width: 768px) {
-	.subMenu{
+	.subMenu1{
 		background: rgb(153,153,153);
 	}
 }
