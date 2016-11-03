@@ -28,7 +28,7 @@ body, html {
 		position: relative;
 		z-index: 1;
 	}
-	.subMenu1{
+	.subMenu{
 		position: absolute;
 		background: rgb(153,153,153);
 		width: 90px;
