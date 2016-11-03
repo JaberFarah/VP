@@ -15,7 +15,7 @@ $(document).ready(function() {
 
     $('.drop2').click(
     	function(){
-    		$(this).children('#sub2').slideDown(100);
+    		$(this).children('#sub2').fadeToggle(100);
     	}
     );
     $(document).on("click",
