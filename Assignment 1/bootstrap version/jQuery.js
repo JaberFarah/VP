@@ -22,21 +22,34 @@ $(document).ready(function() {
     	function(){
     		$('#sub2').slideUp(100);
     	}
-    )
+    );
     $('.drop2').click(
     	function(event){
     		event.stopPropagation();
     	}
-    )
+    );
 
     /* section 3 popUp code */
-    var holder = document.getElementsByClassName("holder");
-    var popUp = document.getElementsByClassName('popUp');
-    var close = document.getElementsByClassName('close');
     $('.drop3').click(
-    	    	function(){
-    		$(this).children('#sub2').fadeToggle(100);
+    	function(){
+    		var width = ($(document).width()/2) > $('.container').width() ? $('.container').width() : ($(document).width()/2);
+    		var height = $('.holder').height()/3;
+    		$('#bigBox').css("width", width);
+    		$('#bigBox').css("height", height);
+    		$('.holder').css("display", "block");
+    });
+    $('.close').click(
+    	function(){
+    		$('.holder').css("display", "none");
+    });
+    $(document).on("click",
+    	function(){
+    		$('.holder').css("display", "none");
     	}
-    })
-
+    );
+    $('.drop3').click(
+    	function(event){
+    		event.stopPropagation();
+    	}
+    );
 });

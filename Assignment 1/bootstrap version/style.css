@@ -52,12 +52,13 @@ body, html {
 }
 #bigBox{
 	background: white;
-	margin: 20% auto;
+	margin: auto;
+		margin-top: 10%;
 	border: 1px solid #999;
 }
 .close{
 	color: #888;
-	float: right;
+	float: right;	
 	font-size: 40px;
 	font-weight: bolder;
 }
