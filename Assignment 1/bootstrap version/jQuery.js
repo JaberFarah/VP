@@ -28,4 +28,15 @@ $(document).ready(function() {
     		event.stopPropagation();
     	}
     )
+
+    /* section 3 popUp code */
+    var holder = document.getElementsByClassName("holder");
+    var popUp = document.getElementsByClassName('popUp');
+    var close = document.getElementsByClassName('close');
+    $('.drop3').click(
+    	    	function(){
+    		$(this).children('#sub2').fadeToggle(100);
+    	}
+    })
+
 });
