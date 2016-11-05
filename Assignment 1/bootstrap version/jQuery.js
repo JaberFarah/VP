@@ -52,4 +52,24 @@ $(document).ready(function() {
     		event.stopPropagation();
     	}
     );
+    $('#bigBox').click(
+    	function(event){
+    		event.stopPropagation();
+    	}
+    );
+
+
+
+        /* groducts more items button code */
+
+    var index = 1;      		
+    $('.moreItems').click(
+    	function(){
+    		if ( index < 4) {
+    			$("div.row.extraRow" + index).removeClass('displayNone');
+    			index = index + 1;
+    		}
+    		if (index == 4)
+    			$('.moreItems').addClass('displayNone');
+    })
 });
