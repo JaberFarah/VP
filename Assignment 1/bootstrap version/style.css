@@ -53,7 +53,8 @@ body, html {
 #bigBox{
 	background: white;
 	margin: auto;
-		margin-top: 10%;
+	margin-top: 10%;
+	width: 50%;
 	border: 1px solid #999;
 }
 .close{
