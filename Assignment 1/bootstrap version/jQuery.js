@@ -72,33 +72,21 @@ $(document).ready(function() {
 
     $('.moreItems').click(
     	function(){
+    		var index = 1;
     		var extraRows =  $('.extraRow').length;
+    		var patch = '<div class="col-md-4 mgbot">\
+						    <a href="#" class="thumbnail"></a>\
+						    <h3 class="text-center"><a class="normal-lnk black">Item';
+			var item = '</a></h3>\
+						</div>';
     		if ( extraRows < 2) {
     			$("div .more").append('<div class="row extraRow">\
-						<div class="col-md-4 mgbot">\
-						    <a href="#" class="thumbnail"></a>\
-						    <h3 class="text-center"><a class="normal-lnk black">Item One</a></h3>\
-						</div>\
-						<div class="col-md-4 mgbot">\
-						    <a href="#" class="thumbnail"></a>\
-						    <h3 class="text-center"><a class="normal-lnk black">Item Two</a></h3>\
-						</div>\
-						<div class="col-md-4 mgbot">\
-						    <a href="#" class="thumbnail"></a>\
-						    <h3 class="text-center"><a class="normal-lnk black">Item Three</a></h3>\
-						</div>\
+						'+ patch + " One" + item + patch + " Two" + item + patch + " Three" + item +'\
 					</div>');
     		}
     		else {
     			$("div .more").append('<div class="row extraRow">\
-						<div class="col-md-4 mgbot">\
-						    <a href="#" class="thumbnail"></a>\
-						    <h3 class="text-center"><a class="normal-lnk black">Item One</a></h3>\
-						</div>\
-						<div class="col-md-4 mgbot">\
-						    <a href="#" class="thumbnail"></a>\
-						    <h3 class="text-center"><a class="normal-lnk black">Item Two</a></h3>\
-						</div>\
+    				'+ patch + " One" + item + patch + " Two" +'\
 					</div>');
     			$('.moreItems').addClass('displayNone');
     		}
