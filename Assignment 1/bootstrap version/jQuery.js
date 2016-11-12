@@ -36,10 +36,9 @@ $(document).ready(function() {
     /* section 3 popUp code */
     $('.drop3').click(
     	function(){
-    		var width = ($(document).width()/2) > $('.container').width() ? $('.container').width() : ($(document).width()/2);
-    		var height = $('.holder').height()/3;
-    		$('#bigBox').css("width", width);
-    		$('#bigBox').css("height", height);
+    		//var width = ($(document).width()/2) > $('.container').width() ? $('.container').width() : ($(document).width()/2);
+    		var marginTop = $('.holder').height()/3;
+    		$('#bigBox').css("margin-top", marginTop);
     		$('.holder').css("display", "block");
     });
     $('.close').click(
@@ -61,22 +60,47 @@ $(document).ready(function() {
     		event.stopPropagation();
     	}
     );
-   /* $('window').resize(
+    $(window).resize(
     	function(){
-    		$('#bigBox').css("height", height);
-    })
-*/
+    		var marginTop = $('.holder').height()/3;
+    		$('#bigBox').css("margin-top", marginTop);
+    		$('.holder').css("display", "block");
+    	})
+
 
         /* groducts more items button code */
 
-    var index = 1;      		
     $('.moreItems').click(
     	function(){
-    		if ( index < 4) {
-    			$("div.row.extraRow" + index).removeClass('displayNone');
-    			index = index + 1;
+    		var extraRows =  $('.extraRow').length;
+    		if ( extraRows < 2) {
+    			$("div .more").append('<div class="row extraRow">\
+						<div class="col-md-4 mgbot">\
+						    <a href="#" class="thumbnail"></a>\
+						    <h3 class="text-center"><a class="normal-lnk black">Item One</a></h3>\
+						</div>\
+						<div class="col-md-4 mgbot">\
+						    <a href="#" class="thumbnail"></a>\
+						    <h3 class="text-center"><a class="normal-lnk black">Item Two</a></h3>\
+						</div>\
+						<div class="col-md-4 mgbot">\
+						    <a href="#" class="thumbnail"></a>\
+						    <h3 class="text-center"><a class="normal-lnk black">Item Three</a></h3>\
+						</div>\
+					</div>');
     		}
-    		if (index == 4)
+    		else {
+    			$("div .more").append('<div class="row extraRow">\
+						<div class="col-md-4 mgbot">\
+						    <a href="#" class="thumbnail"></a>\
+						    <h3 class="text-center"><a class="normal-lnk black">Item One</a></h3>\
+						</div>\
+						<div class="col-md-4 mgbot">\
+						    <a href="#" class="thumbnail"></a>\
+						    <h3 class="text-center"><a class="normal-lnk black">Item Two</a></h3>\
+						</div>\
+					</div>');
     			$('.moreItems').addClass('displayNone');
+    		}
     })
 });
