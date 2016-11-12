@@ -28,6 +28,10 @@ $(document).ready(function() {
     		event.stopPropagation();
     	}
     );
+    $('li').click(
+    	function(event){
+    		event.stopPropagation();
+    	})
 
     /* section 3 popUp code */
     $('.drop3').click(
@@ -57,8 +61,11 @@ $(document).ready(function() {
     		event.stopPropagation();
     	}
     );
-
-
+   /* $('window').resize(
+    	function(){
+    		$('#bigBox').css("height", height);
+    })
+*/
 
         /* groducts more items button code */
 
