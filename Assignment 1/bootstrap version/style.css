@@ -193,7 +193,7 @@ body .gallery div div .trow{
     overflow-x: auto;
 
 }
- .col-md-4, .col-md-2{
+ .floatNone{
     float: none !important;
     display: inline-block;
 }
