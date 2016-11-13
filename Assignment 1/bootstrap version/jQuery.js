@@ -95,11 +95,20 @@ $(document).ready(function() {
     })
     		        /* gallery items slide code */
     var slide = 0;
+    var originalWidth = $('.slide0').width();
+    function plusSlides(n){
+    	slide += n;
+    }
     $('.prev').click(
     	function(){
     		$('.slide' + slide).animate({ width: '0px' }, 1000);
     		$('.slide' + slide).hide(1000);
 
+    	})
+    $('.next').click(
+    	function(){
+    		$('.slide' + slide).show(1000);
+    		$('.slide' + slide).animate({ width: originalWidth }, 1000);
     	})
 });
 
