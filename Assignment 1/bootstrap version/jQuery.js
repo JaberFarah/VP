@@ -93,7 +93,9 @@ $(document).ready(function() {
     			$('.moreItems').addClass('displayNone');
     		}
     })
-    		        /* gallery items slide code */
+
+    
+    		/* gallery items slide code */
     var slide = 0;
     var originalWidth = $('.slide0').width();
 
