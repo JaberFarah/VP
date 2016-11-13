@@ -162,7 +162,12 @@ body .gallery div div .trow{
 	margin: auto;
 	height: 200px;
 }
+.absolute{
+	position: absolute;
+	width: 90%;
+}
 .prev, .next {
+	z-index: 1;
 	cursor: pointer;
 	position: absolute;
 	top: 50%;

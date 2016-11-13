@@ -93,7 +93,15 @@ $(document).ready(function() {
     			$('.moreItems').addClass('displayNone');
     		}
     })
-});
+    		        /* gallery items slide code */
+    var slide = 0;
+    $('.prev').click(
+    	function(){
+    		$('.slide' + slide).animate({left: "-=400"}, { duration: 2000, queue: false });
+    		$('.slide' + slide).animate({opacity: "0"}, { duration: 2000, queue: false });
+    		$('.slide' + 1).animate({left: "-=400"}, { duration: 2000, queue: false });
+    		$('.slide' + 1).animate({left: "-=400"}, { duration: 2000, queue: false });
 
-        /* gallery items slide code */
+    	})
+});
 
