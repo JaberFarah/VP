@@ -66,7 +66,6 @@ $(document).ready(function() {
     			$('#bigBox').css("margin-top", marginTop);
     		 	$('.holder').css("display", "block");
     		}
-
     	})
 
 
@@ -94,28 +93,33 @@ $(document).ready(function() {
     		}
     })
 
-    
+
     		/* gallery items slide code */
-    var slide = 0;
-    var originalWidth = $('.slide0').width();
+    var sslide = 0;
+    var originalWidth;
 
     $('.prev').click(
     	function(){
-    		if (slide < 2) {
-    			$('.slide' + slide).animate({ width: '0px' }, 1000);
-    			$('.slide' + slide).hide(1000);
-    			$('.next' + slide).hide();
-    			slide +=1;
+    		if (sslide < 2) {
+    			originalWidth = $('.sslide' + sslide).width();
+    			$('.sslide' + sslide).animate({ width: '0px' }, 1000);
+    			$('.sslide' + sslide).hide(1000);
+    			$('.next' + sslide).hide();
+    			$('.prev').hide().delay(2000).show(1);
+    			$('.next').hide().delay(2000).show(1);
+    			sslide +=1;
     		}
 
     	}),
     $('.next').click(
     	function(){
-    		if (slide > 0) {
-	    		$('.slide' + (slide - 1)).show(500);
-	    		$('.slide' + (slide - 1)).animate({ width: originalWidth }, 1000);
-	    		$('.next' + (slide - 1)).show();
-	    		slide-=1;
+    		if (sslide > 0) {
+	    		$('.sslide' + (sslide - 1)).show();
+	    		$('.sslide' + (sslide - 1)).animate({ width: (originalWidth + originalWidth*0.09) }, {duration: 1500, queue: false});
+	    		$('.next' + (sslide - 1)).show(1500)
+    			$('.prev').hide().delay(1500).show(1);
+    			$('.next').hide().delay(1500).show(1);
+	    		sslide-=1;
     		}
 
     	})

@@ -169,6 +169,10 @@ body .gallery div div .trow{
 .prev{
 	left: 0;
 }
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 .prev, .next {
 	z-index: 1;
 	cursor: pointer;
@@ -190,7 +194,7 @@ body .gallery div div .trow{
 }
 .row-fluid{
     white-space: nowrap;
-    overflow-x: auto;
+    overflow-x: hidden;
 
 }
  .floatNone{
