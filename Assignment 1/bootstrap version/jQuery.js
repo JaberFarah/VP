@@ -64,7 +64,7 @@ $(document).ready(function() {
     		if ( $('#bigBox').attr('display') == 'block') {
     			var marginTop = $('.holder').height()/3;
     			$('#bigBox').css("margin-top", marginTop);
-    			$('.holder').css("display", "block");
+    		 	$('.holder').css("display", "block");
     		}
 
     	})
@@ -94,3 +94,6 @@ $(document).ready(function() {
     		}
     })
 });
+
+        /* gallery items slide code */
+
