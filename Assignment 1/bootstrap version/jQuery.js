@@ -102,6 +102,7 @@ $(document).ready(function() {
     		if (slide < 2) {
     			$('.slide' + slide).animate({ width: '0px' }, 1000);
     			$('.slide' + slide).hide(1000);
+    			$('.next' + slide).hide();
     			slide +=1;
     		}
 
@@ -111,6 +112,7 @@ $(document).ready(function() {
     		if (slide > 0) {
 	    		$('.slide' + (slide - 1)).show(500);
 	    		$('.slide' + (slide - 1)).animate({ width: originalWidth }, 1000);
+	    		$('.next' + (slide - 1)).show();
 	    		slide-=1;
     		}
 
