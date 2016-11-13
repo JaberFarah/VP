@@ -97,10 +97,8 @@ $(document).ready(function() {
     var slide = 0;
     $('.prev').click(
     	function(){
-    		$('.slide' + slide).animate({left: "-=400"}, { duration: 2000, queue: false });
-    		$('.slide' + slide).animate({opacity: "0"}, { duration: 2000, queue: false });
-    		$('.slide' + 1).animate({left: "-=400"}, { duration: 2000, queue: false });
-    		$('.slide' + 1).animate({left: "-=400"}, { duration: 2000, queue: false });
+    		$('.slide' + slide).animate({ width: '0px' }, 1000);
+    		$('.slide' + slide).hide(1000);
 
     	})
 });

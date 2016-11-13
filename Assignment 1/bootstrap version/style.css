@@ -163,8 +163,11 @@ body .gallery div div .trow{
 	height: 200px;
 }
 .absolute{
-	position: absolute;
-	width: 90%;
+
+}
+
+.prev{
+	left: 0;
 }
 .prev, .next {
 	z-index: 1;
@@ -184,6 +187,15 @@ body .gallery div div .trow{
 .prev:hover, .next:hover {
 	color: white;
 	background-color: rgba(0,0,0,0.8);
+}
+.row-fluid{
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+ .col-md-4, .col-md-2{
+    float: none !important;
+    display: inline-block;
 }
 /* ----------------------------------------- footer --------------------------------------------------*/
 
