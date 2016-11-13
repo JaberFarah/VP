@@ -96,19 +96,24 @@ $(document).ready(function() {
     		        /* gallery items slide code */
     var slide = 0;
     var originalWidth = $('.slide0').width();
-    function plusSlides(n){
-    	slide += n;
-    }
+
     $('.prev').click(
     	function(){
-    		$('.slide' + slide).animate({ width: '0px' }, 1000);
-    		$('.slide' + slide).hide(1000);
+    		if (slide < 2) {
+    			$('.slide' + slide).animate({ width: '0px' }, 1000);
+    			$('.slide' + slide).hide(1000);
+    			slide +=1;
+    		}
 
-    	})
+    	}),
     $('.next').click(
     	function(){
-    		$('.slide' + slide).show(1000);
-    		$('.slide' + slide).animate({ width: originalWidth }, 1000);
+    		if (slide > 0) {
+	    		$('.slide' + (slide - 1)).show(500);
+	    		$('.slide' + (slide - 1)).animate({ width: originalWidth }, 1000);
+	    		slide-=1;
+    		}
+
     	})
 });
 
