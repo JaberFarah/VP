@@ -92,28 +92,26 @@ $(document).ready(function() {
 
     $('.prev2').click(
     	function(){
-    		if (($(window).width() >= 768 && sslide < 2) || ($(window).width() < 768 && sslide < 4) ) {
+    		if (($(window).width() >= 768 && sslide < 3) || ($(window).width() < 768 && sslide < 3) ) {
     			originalWidth = $('.sslide' + sslide).width();
     			$('.sslide' + sslide).animate({ width: '0px' }, 1000);
-    			$('.sslide' + sslide).hide(1000);
+    			$('.sslide' + sslide).hide(500);
     			$('.next' + sslide).hide();
-    			$('.prev2').hide().delay(2000).show(1);
-    			$('.next2').hide().delay(2000).show(1);
-    			sslide +=1;
-    			$('.drnr').append('<p>' + $(window).width() + '</p>');
+    			$('.prev2').hide().delay(1500).show(1);
+    			$('.next2').hide().delay(1500).show(1);
+    			sslide++;
     		}
 
     	}),
     $('.next2').click(
     	function(){
     		if (sslide > 0) {
-	    		$('.sslide' + (sslide - 1)).show();
-	    		$('.sslide' + (sslide - 1)).animate({ width: (originalWidth + 30) }, {duration: 1500, queue: false});
+	    		$('.sslide' + (sslide - 1)).show(0);
+	    		$('.sslide' + (sslide - 1)).animate({ width: '50%' }, {duration: 1500, queue: false});
 	    		$('.next2' + (sslide - 1)).show(1500)
     			$('.prev2').hide().delay(1500).show(1);
     			$('.next2').hide().delay(1500).show(1);
-
-	    		sslide-=1;
+	    		sslide--;
     		}
 
     	})
