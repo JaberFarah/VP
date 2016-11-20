@@ -8,6 +8,9 @@ $(document).ready(function() {
         }
     );
 
+    //var for the slide gallery
+    var sslide = 0;
+
     /* section 2 slide down code */
 
 
@@ -66,6 +69,7 @@ $(document).ready(function() {
     			$('#bigBox').css("margin-top", marginTop);
     		 	$('.holder').css("display", "block");
     		}
+
     	})
 
 
@@ -95,30 +99,31 @@ $(document).ready(function() {
 
 
     		/* gallery items slide code */
-    var sslide = 0;
     var originalWidth;
 
-    $('.prev').click(
+    $('.prev2').click(
     	function(){
-    		if (sslide < 2) {
+    		if (($(window).width() >= 768 && sslide < 2) || ($(window).width() < 768 && sslide < 4) ) {
     			originalWidth = $('.sslide' + sslide).width();
     			$('.sslide' + sslide).animate({ width: '0px' }, 1000);
     			$('.sslide' + sslide).hide(1000);
     			$('.next' + sslide).hide();
-    			$('.prev').hide().delay(2000).show(1);
-    			$('.next').hide().delay(2000).show(1);
+    			$('.prev2').hide().delay(2000).show(1);
+    			$('.next2').hide().delay(2000).show(1);
     			sslide +=1;
+    			$('.drnr').append('<p>' + $(window).width() + '</p>');
     		}
 
     	}),
-    $('.next').click(
+    $('.next2').click(
     	function(){
     		if (sslide > 0) {
 	    		$('.sslide' + (sslide - 1)).show();
-	    		$('.sslide' + (sslide - 1)).animate({ width: (originalWidth + originalWidth*0.09) }, {duration: 1500, queue: false});
-	    		$('.next' + (sslide - 1)).show(1500)
-    			$('.prev').hide().delay(1500).show(1);
-    			$('.next').hide().delay(1500).show(1);
+	    		$('.sslide' + (sslide - 1)).animate({ width: (originalWidth + 30) }, {duration: 1500, queue: false});
+	    		$('.next2' + (sslide - 1)).show(1500)
+    			$('.prev2').hide().delay(1500).show(1);
+    			$('.next2').hide().delay(1500).show(1);
+
 	    		sslide-=1;
     		}
 
