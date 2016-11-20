@@ -39,8 +39,6 @@ $(document).ready(function() {
     /* section 3 popUp code */
     $('.drop3').click(
     	function(){
-    		var marginTop = $('.holder').height()/3;
-    		$('#bigBox').css("margin-top", marginTop);
     		$('.holder').css("display", "block");
     });
     $('.close').click(
@@ -62,15 +60,6 @@ $(document).ready(function() {
     		event.stopPropagation();
     	}
     );
-    $(window).resize(
-    	function(){
-    		if ( $('#bigBox').attr('display') == 'block') {
-    			var marginTop = $('.holder').height()/3;
-    			$('#bigBox').css("margin-top", marginTop);
-    		 	$('.holder').css("display", "block");
-    		}
-
-    	})
 
 
         /* groducts more items button code */

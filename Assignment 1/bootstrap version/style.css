@@ -23,22 +23,8 @@ body, html {
 	cursor: pointer;
 	color: white;
 }
-@media (min-width: 768px) {
-	.dropDown{
-		position: relative;
-		z-index: 1;
-	}
-	.subMenu{
-		position: absolute;
-		background: rgb(153,153,153);
-		width: 90px;
-	}
-}
-@media (max-width: 768px) {
-	.subMenu1{
-		background: rgb(153,153,153);
-	}
-}
+
+
 .holder{
 	display: none;
 	position: fixed;
@@ -51,13 +37,18 @@ body, html {
 	background-color: rgba(0,0,0,0.6);
 }
 #bigBox{
+	position: absolute;
 	background: white;
 	margin: auto;
-	height: 33%;
-	width: 50%;
+	top: 50%;
+	left: 50%;
+	height: 300px;
+	width: 600px;
+	margin-left:-300px;
+	margin-top: -150px;
 	border: 1px solid #999;
-	
 }
+
 .close{
 	color: #888;
 	float: right;	
@@ -68,6 +59,24 @@ body, html {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+	.dropDown{
+		position: relative;
+		z-index: 1;
+	}
+	.subMenu{
+		position: absolute;
+		background: rgb(153,153,153);
+		width: 90px;
+	}
+	#bigBox{
+		height: 200px;
+		width: 300px;
+		margin-left:-150px;
+		margin-top: -100px;
+	}
 }
 /* ----------------------------------------- main --------------------------------------------------*/
 
