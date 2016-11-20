@@ -23,7 +23,17 @@ body, html {
 	cursor: pointer;
 	color: white;
 }
-
+@media (min-width: 768px) {
+	.dropDown{
+		position: relative;
+		z-index: 1;
+	}
+	.subMenu{
+		position: absolute;
+		background: rgb(153,153,153);
+		width: 90px;
+	}
+}
 
 .holder{
 	display: none;
@@ -48,7 +58,14 @@ body, html {
 	margin-top: -150px;
 	border: 1px solid #999;
 }
-
+@media (max-width: 767px) {
+	#bigBox{
+		height: 200px;
+		width: 300px;
+		margin-left:-150px;
+		margin-top: -100px;
+	}
+}
 .close{
 	color: #888;
 	float: right;	
@@ -59,24 +76,6 @@ body, html {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
-}
-
-@media screen and (min-width: 767px) {
-	.dropDown{
-		position: relative;
-		z-index: 1;
-	}
-	.subMenu{
-		position: absolute;
-		background: rgb(153,153,153);
-		width: 90px;
-	}
-	#bigBox{
-		height: 200px;
-		width: 300px;
-		margin-left:-150px;
-		margin-top: -100px;
-	}
 }
 /* ----------------------------------------- main --------------------------------------------------*/
 
@@ -172,9 +171,6 @@ body .gallery div div .trow{
 	margin: auto;
 	height: 200px;
 }
-.absolute{
-
-}
 
 .prev2{
 	left: 0;
@@ -204,7 +200,7 @@ body .gallery div div .trow{
 }
 .row-fluid{
     white-space: nowrap;
-    overflow: auto;
+    overflow: hidden;
     display: inline-block;
     width: 100%;
 
