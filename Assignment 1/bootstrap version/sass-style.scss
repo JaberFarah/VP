@@ -1,0 +1,116 @@
+%reset {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a, blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, img, input, label, li, ol, p, pre, td, th, ul{
+	@extend %reset;
+}
+body, html {
+    height: 100%;
+}
+
+/* ----------------------------------------- header --------------------------------------------------*/
+
+$primaryBgColor: rgb(153,153,153);
+$smallScreen: 768px;
+.header-bg{
+	background: rgb(153,153,153);
+}
+.navbar{
+	margin-bottom: 0;
+}
+.displayNone{
+	display: none;
+}
+.subMenu{
+	@media screen and (min-width: $smallScreen){
+		position: absolute;
+		background: $primaryBgColor;
+		width: 90px;
+	}
+	li{
+		&:hover{
+			cursor: pointer;
+			color: white;
+		}
+	}
+}
+@media screen and (min-width: $smallScreen){
+	.dropDown{
+		position: relative;
+		z-index: 1;
+	}
+}
+.holder{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	background-color: rgba(0,0,0,0.6);
+}
+#bigBox{
+	position: absolute;
+	background: white;
+	top: 50%;
+	left: 50%;
+	height: 200px;
+	width: 300px;
+	margin-left:-150px;
+	margin-top: -100px;
+	border: 1px solid #999;
+	@media screen and (min-width: $smallScreen){
+		height: 200px;
+		width: 300px;
+		margin-left:-150px;
+		margin-top: -100px;
+	}
+}
+.close{
+	color: black;
+	float: right;
+	font-size: 40px;
+	font-weight: bolder;
+	&:hover, &:hover{
+		color:black;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+/* ----------------------------------------- main --------------------------------------------------*/
+
+body {
+	.main{
+		min-height: 550px;
+		background-color: $primaryBgColor;
+	}
+	.main-bg{
+		background-color: $primaryBgColor;
+	}
+	.jumbotron{
+		background: $primaryBgColor;
+	}
+	.vertical-center{
+		display: flex;
+		height: 500px;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+.mgbot{
+	margin-bottom: 40px;
+}
+.pull-right{
+	padding-right: 90px;
+}
+.mainHeader{
+	font-size: 60px !important;
+}
+.carousel-inner>.item>img{
+	min-width: 100%;
+}

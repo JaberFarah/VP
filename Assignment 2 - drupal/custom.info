@@ -1,0 +1,17 @@
+name = Custom Theme
+type = theme
+description = a custom theme
+core = 7.x
+screenshot = assignment-1.jpg
+
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/style.css
+
+scripts[] = js/buttons.js
+scripts[] = js/bootstrap.js
+scripts[] = js/bootstrap.min.js
+
+regions[header] = Header
+regions[featured] = featured
+regions[content] = Content
+regions[footer] = footer
